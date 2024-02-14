@@ -218,8 +218,7 @@ let valeurDeRetour = afficheDureeEcoulee(maFonctionATester);
 let secondes = Math.floor(Date.now() / 1000);
 ```
 
-Dans ce cas, on renvoie un entier et c'est pour ça qu'on utilise {{jsxref("Math.floor()")}}. Par ailleurs, on n'utilise pas {{jsxref("Math.round()")}} afin d'avoir le nombre de secondes effectivement écoulées.
-
+Ici, il est important de ne renvoyer que la valeur entière (ce que ne fait pas une simple division). On arrondit grace à {{jsxref("Math.floor()")}} et non pas avec {{jsxref("Math.round()")}} pour renvoyer le nombre de secondes effectivement écoulées. 
 ## Spécifications
 
 {{Specifications}}
